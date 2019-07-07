@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+    <img [src]="item.imgPath" class="img-fluid" />
+  </div>
+  <div class="col-9 col-sm-9 col-md-9 col-lg-9">
+    <h5>{{item.name|uppercase}}</h5>
+    <h6>{{item.price|currency:item.currency:'symbol'}}</h6>
+    <button>Buy Item</button>
+    <br />
+
+    <ul class="nav nav-tabs">
+      <li class="nav nav-item">
+        <a href="/">Description</a>
+      </li>
+      <li class="nav nav-item">
+        <a href="/">Ingredients</a>
+      </li>
+      <li class="nav nav-item">
+        <a href="/">Reviews</a>
+      </li>
+    </ul>
+  </div>
+</div>
